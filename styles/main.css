@@ -1,0 +1,644 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, p, li, a, th, td, button {
+    margin: 0;
+    padding: 0;
+    font-family: "Tinos", "Times New Roman", serif;
+    font-weight: 400;
+    color: rgb(50, 50, 50);
+}
+
+h1 {
+    font-size: 46px;
+    line-height: 1.2;
+	letter-spacing: 4px;
+	text-align: center;
+    text-transform: uppercase; 
+}
+
+h2 {
+    font-size: 34px;
+	letter-spacing: 1.75px;
+    line-height: 1.2;
+	text-align: left;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 19px;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+mark {
+    background-color: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+
+/*---------------------------------- 
+hauptnav-is-clean
+-----------------------------------*/
+#navcontainer {
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 40px 5%;
+    position: fixed;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    z-index: 100;
+    top: 0;
+}
+
+.nav-left  {
+    width: 32%;
+}
+
+.nav-left img{
+    float: left;   
+}
+
+.solarius-logo {
+    padding-left: 16px;
+    display: inline-block;
+    letter-spacing: 5px;
+}
+
+.topnav {
+    list-style-type: none;
+    text-align: right;
+    cursor: pointer;
+    float: right;
+}
+
+.topnav a {
+    display: inline-block;
+    padding: 14px 0px 14px 14px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.live {
+    color: red;
+}
+
+.pulse {
+    vertical-align: middle;
+    font-size: 32px;
+    line-height: 1px;
+    color: red;
+    animation: pulsate 2.5s ease-out;
+    animation-iteration-count: infinite; 
+    opacity: 0.25;
+    position: relative;
+    bottom: 1px;
+}
+
+@keyframes pulsate {
+    0% {opacity: 0.25;}
+    50% {opacity: 1.0;}
+    100% {opacity: 0.25;}
+}
+
+@-webkit-keyframes pulsate {
+    0% {opacity: 0.25;}
+    50% {opacity: 1.0;}
+    100% {opacity: 0.25;}
+}
+
+/*---------------------------------- 
+responsive-nav-is-clean
+-----------------------------------*/
+
+.topnav .close {
+    display: none;
+    padding-top: 10px;
+}
+
+.topnav .close:hover {
+    color: rgba(255, 0, 0, 0.8); 
+}
+
+.topnav .menu {
+  display: none;
+}
+
+@media screen and (max-width: 930px) {
+    .nav-left {width: 90%;}
+    .topnav .navresp {display: none; padding: 16px 0px;}
+    .topnav .menu {
+        display: block;
+        padding: 12px 0px 0px 0px; 
+    }
+}
+@media screen and (min-width: 931px) {
+    .nav-left {width: 32%;}
+    .topnav .navresp {display: inline-block !important;}
+    .topnav .menu {display: none;}
+    .close {display: none !important;}
+}
+
+/*---------------------------------- 
+fullscreen-img-transition-fix
+-----------------------------------*/
+
+.header-img-container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.header-img-defin{
+    position: relative;
+    z-index: 1;
+    top: 80px;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;  
+}
+
+.header-img-kontakt {
+    position: relative;
+    z-index: 1;
+    top: 100px;
+    min-height: 60vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover; 
+}
+
+.header-img-start {background-image: url("../img/solarius-rosenberg-home-header.jpg");}
+.header-img-eigentum {background-image: url("../img/solarius-rosenberg-eigentum-header.jpg");}
+.header-img-miete {background-image: url("../img/solarius-rosenberg-miete-kueche.jpg");}
+.header-img-lage {background-image: url("../img/solarius-rosenberg-lage-stgallen-saentis.jpg");}
+.header-img-kontakt {background-image: url("../img/solarius-rosenberg-drohnenaufnahme-st-gallen.jpg");}
+/*---------------------------------- 
+section-stage-is-clean
+-----------------------------------*/
+
+.section-stage-container {
+    z-index: 2;
+    position: absolute;
+    bottom: 50px;
+    width: 90%;
+    margin: 0px 5%;
+    float: right;
+}
+
+.section-stage-container h2 {
+    text-align: right;
+    color: whitesmoke;
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 10px rgba(40, 40, 40, 0.5);
+}
+
+/*---------------------------------- 
+Live Video
+-----------------------------------*/
+
+.videobutton {
+    position: absolute;
+    right: 5%;
+    z-index: 10;
+    width: 150px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 10px;
+    background-color: whitesmoke;
+    border: none;    
+}
+
+#buttonLive {
+    top: 200px; 
+    background: red; 
+    color: white;
+}
+
+#buttonZeitraffer {top: 250px;}
+
+
+.videobutton:hover {
+    width: 170px;
+    cursor: pointer;
+}
+
+.webcam-container{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+
+.aktuell p {
+    position: absolute;
+    bottom: 5%;;
+    left: 5%;
+    background: whitesmoke;
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+}
+
+.aktuell span {
+   color: red;
+}
+.aktuell .date {
+   color: rgba(0, 0, 0, 0.5);
+}
+
+/*---------------------------------- 
+article-main-is-clean
+-----------------------------------*/
+
+.article-main-container {
+    text-align: center;
+    margin-top: 150px;
+    width: 100%;
+    padding: 0 5%;
+}
+
+.article-main-container h1 {
+    margin: 0 auto;
+    margin-top: 34px;
+    width: 600px;
+}
+
+.article-main-p {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 120px;
+    padding: 0 40px;
+    max-width: 820px;
+    text-align: center;
+}
+
+.article-img-container, 
+.article-img-container-fix { 
+    position: relative;
+    width: 100%;
+    height: auto;
+    -webkit-transition: -webkit-transform 1s;
+    transition: transform 1s;
+}
+/*
+.article-img-container:hover { 
+    transform: scale(1.02);
+}*/
+
+/*---------------------------------- 
+Dropdown-Bottom-is-clean
+-----------------------------------*/
+
+.dropdown  {
+    position: absolute;
+}
+
+.plus-1 {top: 48%; left: 12%;}
+.plus-2 {top: 43%; left: 24%;}
+.plus-3 {top: 39%; left: 36%;}
+.plus-4 {top: 47%; left: 46%; z-index:2;}
+.plus-5 {top: 30%; left: 10%;}
+.plus-6 {top: 36%; left: 60%;}
+.plus-7 {top: 45%; left: 44%; z-index:2;}
+
+.dropbtn {
+    position: absolute;
+    background-color: white;
+    color: rgb(40, 40, 40);
+    width: 36px;
+    height: 36px;
+    font-size: 29px;
+    font-weight: lighter;
+    line-height: 0px;
+    border: none;
+    border-radius: 50%;
+    z-index: 4; 
+}
+
+.minus {
+    display: none;
+}
+
+.table-content{
+    visibility:hidden;
+    opacity:0;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+    position: absolute;
+    z-index: 3;
+    top: 22px;
+    left: 22px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 300px;
+    padding: 20px;
+}
+
+.table-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border-bottom: 1px solid rgb(200,200,200);
+    padding: 8px 6px;
+    text-align: left;  
+}
+
+td:first-child {
+    width: 72px;
+}
+
+.dropdown:hover .table-content {visibility:visible; opacity:1;}
+.dropdown:hover .minus {display: block;}
+.dropdown:hover .plus {display: none;}
+.dropdown:hover .dropbtn {background-color: whitesmoke;}
+
+/*---------------------------------- 
+article-second-is-clean
+-----------------------------------*/
+.section-second-container {
+    width: 100%;
+    padding: 0 5%;
+}
+
+.article-50-container h2,
+.article-50-container p {
+    width: 50%;
+    margin-top: 80px;
+    margin-bottom: 180px;
+    float: left;
+    padding: 0px 12px;
+    text-align: left;
+}
+
+/*---------------------------------
+footer-grundriss-is-clean
+----------------------------------*/
+
+.footer-grundriss {
+    width: 50%;
+    float: left;
+    margin-top: 80px;
+    margin-bottom: 120px;
+    padding: 0px 30px 0px 12px;
+}
+
+.footer-grundriss p {
+    text-align: left;
+    padding-top: 20px;
+}
+
+.f-g-nav-container {
+    width: 25%;
+    float: left;
+    margin-top: 80px;
+}
+
+.f-g-nav-container .l {
+    padding-left: 12px;
+}
+
+.f-g-nav-container .r {
+    padding-right: 12px;
+}
+
+.f-g-nav-container img {
+    max-width: 100.5%;
+}
+
+.f-g-nav-container a:hover img {
+    opacity: 0.4;
+}
+
+.f-g-nav-container a:hover h2 {
+    color: red;
+}
+
+/*---------------------------------- 
+footer-is-clean
+-----------------------------------*/
+
+.footer-container {
+    width: 100%;
+    padding: 0 5%;
+    display: inline-block;
+}
+
+.footer-25, .impressum {
+    list-style-type: none;
+    width: 25%;
+    padding: 6px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.footer-25 li {
+    padding: 10px 6px 8px 6px;
+    border-bottom: 1px solid rgb(200,200,200);
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    text-align: left;
+}
+
+.footer-title {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-container-kontakt {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    padding: 0 5%;
+}
+
+.togglelink {
+    cursor: pointer;
+}
+
+/*---------------------------------- 
+impressum
+-----------------------------------*/
+
+#impressum {
+    width: 100%;
+    display: none;
+}
+
+.impressum {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+#impressum article {
+    width: 25%;
+    margin-top: 40px;
+    float: left;
+}
+
+.impressum p, .impressum p a  {
+    padding: 10px 20px 0px 6px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    text-align: left;
+}
+.impressum p a {
+     padding: 10px 20px 0px 0px;
+}
+
+.impressum h3 {
+    padding: 10px 6px 8px 6px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    text-align: left;
+}
+
+/*---------------------------------- 
+a-is-clean
+-----------------------------------*/
+
+a:link {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none; 
+}
+
+a:active {
+    color: rgba(255, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.active_site{
+    border-bottom: 1px solid red;
+    padding-bottom: 5px;
+}
+
+/*---------------------------------- 
+Responsive
+-----------------------------------*/
+
+@media screen and (max-width: 1025px) {
+    .footer-grundriss {
+        width: 75%;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+    .f-g-nav-container {
+        width: 50%;
+        margin-top: 0px;
+        margin-bottom: 80px
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .footer-25 {
+        width: 50%;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+    .footer-container-kontakt {
+        margin-top: 40px;
+    }
+    
+    #impressum article {
+    width: 50%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .icon-scroll{display: none;}
+    .article-main-container{
+        width: 100%;
+        padding: 0;
+        margin-top: 100px
+    }
+ 
+    .article-main-p{
+        padding: 0px 40px;
+    }
+     .table-content {
+        width: 240px;
+    }
+    .plus-1 {top: 43%; left: 12%;}
+    .plus-2 {top: 38%; left: 24%;}
+    .plus-3 {top: 33%; left: 36%;}
+    .plus-4 {top: 41%; left: 44%; z-index:2;}
+    .plus-6 {top: 36%; left: 45%;}
+    .plus-7 {top: 45%; left: 30%; z-index:2;}
+    .dropbtn {
+        width: 30px;
+        height: 30px;
+        font-size: 24px;
+    }
+    .article-50-container h2,
+    .article-50-container p {
+        width: 100%;
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+    .article-50-container p {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+   h1 {
+    font-size: 38px;
+	letter-spacing: 3px;
+    padding: 0px 40px; 
+    }
+    
+    h2 {font-size: 28px;}
+    p {font-size: 17px;}
+    
+    #navcontainer {padding: 18px 5% !important;}
+    .nav-left img {width: 30px; height: 30px;}
+    .topnav .menu {padding-top: 9px;}
+    .header-img-defin {background-position: left; top: 60px}
+    .header-img-defin.header-img-start {background-position: right;}
+    .header-img-defin.header-img-lage {background-position: center;}
+    .section-stage-container {bottom: 20px;}
+    .section-second-container, .footer-grundriss {padding: 0;}
+    .article-main-p {margin-bottom: 80px; margin-top: 40px;}
+    .dropdown {display: none;}
+    .article-main-container h1, .footer-grundriss, .footer-25, #impressum article {width: 100%;}
+    .article-50-container h2, .article-50-container p,
+    .footer-grundriss h2, .footer-grundriss p {padding: 0px 5%;}
+    .f-g-nav-container {padding: 0px 5%}
+    .f-g-nav-container .l, .f-g-nav-container .r {padding: 0px;}
+    .header-img-kontakt {display: none;}
+}
+
+    
