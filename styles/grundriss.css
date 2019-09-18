@@ -5,6 +5,7 @@ grundriss-nav-is-clean
 body.background-grundriss {
     background-color: whitesmoke;
 }
+
 .g-nav-container-fix{
     height: 220px;
 }
@@ -33,6 +34,12 @@ body.background-grundriss {
     color: red;
 }
 
+.g-nav {
+    width: 50%;
+    float: left;
+    margin-bottom: 50px;
+}
+
 .footer-container-grundriss {
     position: relative;
     width: 100%;
@@ -44,7 +51,7 @@ top-nav-grundriss-is-clean
 -----------------------------------------*/
 
 #nav-container-grundriss {
-    background-color: whitesmoke;
+    background-color: #ffffff;
     width: 100%;
     padding: 20px 5%;
     position: fixed;
@@ -69,7 +76,6 @@ nav-side-container
     padding-top: 120px;
     padding-bottom: 40px;
     float: left;
-    background-color: rgba(245, 245, 245, 0.5);
 }
 
 .next{

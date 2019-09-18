@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-h1, h2, h3, h4, p, li, a, th, td, button {
+h1, h2, h3, h4, p, li, a, th, td, button, figcaption {
     margin: 0;
     padding: 0;
     font-family: "Tinos", "Times New Roman", serif;
@@ -48,12 +48,24 @@ mark {
     color: rgba(0, 0, 0, 0.8);
 }
 
+figure {
+    margin: 0;
+}
+
+figcaption {
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+
+}
 
 /*---------------------------------- 
 hauptnav-is-clean
 -----------------------------------*/
 #navcontainer {
-    background-color: whitesmoke;
+    background-color: #fff;
     width: 100%;
     padding: 40px 5%;
     position: fixed;
@@ -181,11 +193,11 @@ fullscreen-img-transition-fix
     background-size: cover; 
 }
 
-.header-img-start {background-image: url("../img/solarius-rosenberg-home-header.jpg");}
-.header-img-eigentum {background-image: url("../img/solarius-rosenberg-eigentum-header.jpg");}
+.header-img-start {background-image: url("../img/solarius-rosenberg-st-gallen-greifenstrasse-miete-mietwohnung-eigentumswohnung-aussenansicht.jpg");}
+.header-img-eigentum {background-image: url("../img/solarius-rosenberg-st-gallen-greifenstrasse-eigentum-eigentumswohnungen.jpg");}
 .header-img-miete {background-image: url("../img/solarius-rosenberg-miete-kueche.jpg");}
-.header-img-lage {background-image: url("../img/solarius-rosenberg-lage-stgallen-saentis.jpg");}
-.header-img-kontakt {background-image: url("../img/solarius-rosenberg-drohnenaufnahme-st-gallen.jpg");}
+.header-img-lage {background-image: url("../img/solarius-rosenberg-greifenstrasse-lage-stgallen-saentis.jpg");}
+.header-img-kontakt {background-image: url("../img/solarius-rosenberg-eigentum-wohnzimmer-kueche.jpg");}
 /*---------------------------------- 
 section-stage-is-clean
 -----------------------------------*/
@@ -463,6 +475,7 @@ footer-is-clean
 
 .footer-title {
     color: rgba(0, 0, 0, 0.5);
+    font-weight: 700;
 }
 
 .footer-container-kontakt {

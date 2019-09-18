@@ -40,13 +40,13 @@ $(document).ready(function () {
     }
     });
 
-    function ScrollToTop() {
+    /*function ScrollToTop() {
       setTimeout(function() {
         $('html, body').animate({
           scrollTop: $($accordion_title).offset().top - 20
         }, 600);
       }, 600);
-    }
+    }*/
     
     //Impressum
     
