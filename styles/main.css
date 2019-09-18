@@ -61,6 +61,42 @@ figcaption {
 
 }
 
+/*-----
+Countdown
+-----*/
+
+
+div {
+  display: inline-block;
+  line-height: 1;
+  padding: 20px;
+  font-size: 40px;
+}
+
+span {
+  display: block;
+  font-size: 20px;
+  color: white;
+}
+
+#days {
+  font-size: 100px;
+  color: #db4844;
+}
+#hours {
+  font-size: 100px;
+  color: #f07c22;
+}
+#minutes {
+  font-size: 100px;
+  color: #f6da74;
+}
+#seconds {
+  font-size: 50px;
+  color: #abcd58;
+}
+
+
 /*---------------------------------- 
 hauptnav-is-clean
 -----------------------------------*/
