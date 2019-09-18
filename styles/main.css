@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-h1, h2, h3, h4, p, li, a, th, td, button, figcaption {
+h1, h2, h3, h4, p, li, a, th, td, button, figcaption, #countdowntimer {
     margin: 0;
     padding: 0;
     font-family: "Tinos", "Times New Roman", serif;
@@ -66,36 +66,36 @@ Countdown
 -----*/
 
 
-div {
-  display: inline-block;
-  line-height: 1;
-  padding: 20px;
-  font-size: 40px;
+#countdown {
+    width: 100%;
+    height: 100vh;
+    background-color: #182110;
+    z-index: 200;
+    position: fixed;
+    overflow:scroll; 
 }
 
-span {
-  display: block;
-  font-size: 20px;
-  color: white;
+#countdowntimer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    letter-spacing: 3px;
+    z-index: 2;
+    color: #fff;
 }
 
-#days {
-  font-size: 100px;
-  color: #db4844;
+.countdownimg {
+    background-image: url("../img/solarius-rosenberg-st-gallen-greifenstrasse-miete-mietwohnung-eigentumswohnung-aussenansicht.jpg");
+    position: relative;
+    top: 0;
+    opacity: 0.4;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;  
 }
-#hours {
-  font-size: 100px;
-  color: #f07c22;
-}
-#minutes {
-  font-size: 100px;
-  color: #f6da74;
-}
-#seconds {
-  font-size: 50px;
-  color: #abcd58;
-}
-
 
 /*---------------------------------- 
 hauptnav-is-clean
