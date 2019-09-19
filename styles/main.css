@@ -74,16 +74,18 @@ Countdown
     overflow:scroll; 
 }
 
-#countdowntimer {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#countdowntimer, .countdowninfo {
     font-size: 36px;
     letter-spacing: 3px;
-    z-index: 2;
     color: #fff;
+    font-weight: 100;
 }
+
+.countdowninfo {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
 
 .countdownimg {
     background-image: url("../img/solarius-rosenberg-st-gallen-greifenstrasse-miete-mietwohnung-eigentumswohnung-aussenansicht.jpg");
@@ -94,6 +96,14 @@ Countdown
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;  
+}
+
+.countdownholder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
 }
 
 /*---------------------------------- 
