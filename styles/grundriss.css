@@ -96,6 +96,7 @@ nav-side-container
 .accordion-title {
     border-bottom: 1px solid rgba(40, 40, 40, 0.5);
     font-size: 22px;
+    letter-spacing: 1px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -111,7 +112,7 @@ nav-side-container
 }
 
 .accordion-list {
-    margin: 10px 0px -10px 0px;
+    margin: 10px 0px;
     padding: 0px;
 }
 
@@ -120,19 +121,25 @@ nav-side-container
     padding-top: 10px;
     border-top: 1px solid rgba(40, 40, 40, 0.5);
     color: rgba(0, 0, 0, 0.7);
-    font-size: 21px;
+    font-size: 18px;
     letter-spacing: 0.6px;
     list-style-type: none;
 }
 
+.first{
+    padding-top: 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
 .a {
-    width: 28%;
+    width: 60%;
     text-align: left;
     display: inline-block;
 }
 
 .b {
-    width: 72%;
+    width: 40%;
     display: inline-block;
     text-align: right;
 }

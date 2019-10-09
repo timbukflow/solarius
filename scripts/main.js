@@ -2,7 +2,7 @@ $(document).ready(function () {
     
     
     // timer countdown
-    var countDownDate = new Date("21 September 2019 17:50:00 GMT+02:00").getTime();
+   /* var countDownDate = new Date("21 November 2019 17:50:00 GMT+02:00").getTime();
     var x = setInterval(function() {
         var now = new Date().getTime();
         var distance = countDownDate - now;
@@ -16,7 +16,7 @@ $(document).ready(function () {
             $('#countdown').fadeOut("slow");
         }
     }, 1000);
-    
+    */
     
     //Responsive Navigation
     
@@ -58,13 +58,13 @@ $(document).ready(function () {
     }
     });
 
-    /*function ScrollToTop() {
+    function ScrollToTop() {
       setTimeout(function() {
         $('html, body').animate({
           scrollTop: $($accordion_title).offset().top - 20
         }, 600);
       }, 600);
-    }*/
+    }
     
     //Impressum
     
