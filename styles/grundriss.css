@@ -2,10 +2,6 @@
 grundriss-nav-is-clean
 -----------------------------------------*/
 
-body.background-grundriss {
-    background-color: whitesmoke;
-}
-
 .g-nav-container-fix{
     height: 220px;
 }
@@ -55,6 +51,7 @@ top-nav-grundriss-is-clean
     width: 100%;
     padding: 20px 5%;
     position: fixed;
+    border-bottom: 1px solid rgba(40, 40, 40, 0.5);
     -webkit-transition: 0.5s;
     transition: 0.5s;
     z-index: 100;
@@ -67,15 +64,16 @@ nav-side-container
 -----------------------------------------*/
 
 .nav-side-container {
-    width: 35%;
+    width: 40%;
     overflow: scroll;
     position: fixed;
     height: 100vh;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 120px;
+    padding-top: 160px;
     padding-bottom: 40px;
     float: left;
+    border-right: 1px solid rgba(40, 40, 40, 0.5);
 }
 
 .next{
@@ -95,7 +93,7 @@ nav-side-container
 
 .accordion-title {
     border-bottom: 1px solid rgba(40, 40, 40, 0.5);
-    font-size: 22px;
+    font-size: 20px;
     letter-spacing: 1px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -112,13 +110,15 @@ nav-side-container
 }
 
 .accordion-list {
-    margin: 10px 0px;
+    margin: 10px 0px 20px;
     padding: 0px;
 }
 
 .accordion-list li {
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-left: 14px;
+    padding-right: 8px;
     border-top: 1px solid rgba(40, 40, 40, 0.5);
     color: rgba(0, 0, 0, 0.7);
     font-size: 18px;
@@ -127,9 +127,9 @@ nav-side-container
 }
 
 .first{
-    padding-top: 20px;
-    font-size: 22px;
-    font-weight: 600;
+    padding-top: 30px;
+    font-size: 20px;
+    color: #000;
 }
 
 .a {
@@ -162,13 +162,12 @@ grundrisse-container
 .plan-container {
     position: relative;
     top: 82px;
-    left: 35%;
-    width: 65%;
+    left: 40%;
+    width: 60%;
 }
 
 .plan-container img {
     width: 100%;
-    padding: 80px 150px;
     box-sizing: border-box;
 }
 
@@ -181,10 +180,7 @@ grundriss-responsive
 }
 
 @media screen and (max-width: 960px) {
-    
-    body.background-grundriss {
-    background-color: white;
-    }
+
     .responsiv-map{
     display: block;
     width: 100%;
@@ -199,6 +195,7 @@ grundriss-responsive
     width: 100%;
     position: relative;
     padding-top: 100px;
+    border-right: none;
     
     }
     #nav-container-grundriss {
