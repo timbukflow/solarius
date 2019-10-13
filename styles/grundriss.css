@@ -88,6 +88,7 @@ nav-side-container
 
 #navimage {
     max-width: 100%;
+    width: 300px;
     padding: 30px 0px;
 }
 
