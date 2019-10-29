@@ -2,7 +2,8 @@ $(document).ready(function () {
     
     
     // timer countdown
-   /* var countDownDate = new Date("21 November 2019 17:50:00 GMT+02:00").getTime();
+    /*
+    var countDownDate = new Date("25 November 2019 00:00:00 GMT+02:00").getTime();
     var x = setInterval(function() {
         var now = new Date().getTime();
         var distance = countDownDate - now;
@@ -11,12 +12,13 @@ $(document).ready(function () {
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
         
-        document.getElementById("countdowntimer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+        document.getElementById("countdowntimer").innerHTML = days + " Tage " + hours + " Stunden " + minutes + " Minuten " + seconds + " Sekunden ";
         if (distance < 0) {
             $('#countdown').fadeOut("slow");
         }
     }, 1000);
     */
+    
     
     //Responsive Navigation
     
