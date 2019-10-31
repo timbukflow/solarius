@@ -2,7 +2,7 @@ $(document).ready(function () {
     
     
     // timer countdown
-    /*
+ 
     var countDownDate = new Date("25 November 2019 00:00:00 GMT+02:00").getTime();
     var x = setInterval(function() {
         var now = new Date().getTime();
@@ -17,7 +17,7 @@ $(document).ready(function () {
             $('#countdown').fadeOut("slow");
         }
     }, 1000);
-    */
+
     
     
     //Responsive Navigation
