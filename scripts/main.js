@@ -12,7 +12,7 @@ $(document).ready(function () {
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
         
-        document.getElementById("countdowntimer").innerHTML = days + " Tage " + hours + " Stunden " + minutes + " Minuten " + seconds + " Sekunden ";
+        document.getElementById("countdowntimer").innerHTML = days + " Tagen " + hours + " Stunden " + minutes + " Minuten " + seconds + " Sekunden ";
         if (distance < 0) {
             $('#countdown').fadeOut("slow");
         }
