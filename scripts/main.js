@@ -14,7 +14,7 @@ $(document).ready(function () {
     }
     
     // Set the date we're counting down to
-    var countDownDate = getNormalisedDatetime("2019-11-25 01:00:00").getTime();
+    var countDownDate = getNormalisedDatetime("2019-11-25 00:00:00").getTime();
     
     // Update the count down every 1 second
     var x = setInterval(function() {
