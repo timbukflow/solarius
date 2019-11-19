@@ -33,7 +33,7 @@ $(document).ready(function () {
         
         
         // Display the result in the element with id="countdown"
-        document.getElementById("countdown").innerHTML = days + " Tagen " + hours + " Stunden " + minutes + " Minuten " + seconds + " Sekunden ";
+        document.getElementById("countdowntimer").innerHTML = days + " Tagen " + hours + " Stunden " + minutes + " Minuten " + seconds + " Sekunden ";
         
         // If the count down is finished, write some text 
         if (distance < 0) {
