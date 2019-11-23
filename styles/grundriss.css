@@ -115,6 +115,10 @@ nav-side-container
     padding: 0px;
 }
 
+.reserviert {
+    color: rgba(0, 0, 0, 0.3) !important;
+}
+
 .accordion-list li {
     padding-bottom: 8px;
     padding-top: 8px;
