@@ -604,6 +604,42 @@ a:active {
 }
 
 /*---------------------------------- 
+optoutbanner
+-----------------------------------*/
+
+#optoutbanner99 {
+	font-size: 12px;
+	line-height: 18px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+	background-color: #fff;
+	text-align: right;
+	z-index: 200;
+}
+
+#optoutbanner99 p {
+    padding: 15px 15px;
+    font-size: 15px;
+    display: inline-block;
+    margin: 0px;
+    text-align: left;
+}
+
+#optoutbanner99 a {
+	cursor: pointer;
+    font-size: 15px;
+    display: inline-block;
+    margin: 0px;
+	text-decoration: none !important;
+	background-color: #000;
+	color: #fff !important;
+	font-weight: normal !important;
+    padding: 18px 18px;
+}
+
+
+/*---------------------------------- 
 Responsive
 -----------------------------------*/
 
@@ -668,6 +704,10 @@ Responsive
     }
     .article-50-container p {
         margin-top: 0px;
+    }
+    
+    #optoutbanner99 {
+        display: none;
     }
 }
 
