@@ -153,6 +153,11 @@ nav-side-container
     color: red;
 }
 
+.verkauft div {
+    color: #000;
+    font-weight: 600;
+}
+
 /* ---------------------------------------
 accordion animation
 -----------------------------------------*/
