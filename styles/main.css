@@ -319,6 +319,10 @@ Live Video
     float: left;
 }
 
+.news .fl {
+    float: right;
+}
+
 .news h1, .news h2, .news h3, .news a  {
     font-size: 19px;
 	line-height: 1.5;
