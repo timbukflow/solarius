@@ -56,6 +56,7 @@ $(document).ready(function () {
         $('#buttonZeitraffer').css({"background-color": "#ff0000", "color": "#fff"}); 
     });
     $('#buttonLive').click(function() {
+        location.reload();
         $('#live').css({"display": "block"});
         $('#zeitraffer').hide();
         $('#buttonZeitraffer').css({"background-color": "#f5f5f5", "color": "#323232"});
