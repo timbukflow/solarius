@@ -30,38 +30,32 @@
     </head>
     
     <body>
-        <nav id="navcontainer"> 
+        <nav id="navcontainerlive"> 
             <a href="index" target="_top" class="nav-left">
                 <img src="img/logo-solarius-rosenberg.svg" alt="Solarius Rosenberg Logo" title="Solarius Rosenberg Logo" width="38" height="38"/>
                 <h2 class="solarius-logo">SOLARIUS</h2>
             </a>
-            <div class="topnav">
-                <a style="font-size: 16px;" class="menu">Menu</a>
-                <a style="font-size: 16px;" class="close">&#9587;</a>
-                <a class="navresp" href="eigentum" target="_top">Eigentum</a>
-                <a class="navresp" href="miete" target="_top">Miete</a>
-                <a class="navresp" href="lage" target="_top">Lage</a>
-                <a class="navresp" href="grundriss" target="_top">Grundriss</a>
-                <a class="navresp" href="kontakt" target="_top">Kontakt</a>
-                <a class="navresp" href="news" target="_top">News</a>
-                <a class="navresp" href="live" target="_top"><span class="live">Live</span><span class="pulse">&bull;</span></a>
-            </div>
         </nav>
-        <button id="buttonLive" class="videobutton">&#8250; LIVE</button>
-        <button id="buttonZeitraffer" class="videobutton">&#8250; Zeitraffer</button>
-        <video autoplay muted loop id="webcam" class="webcam-container">
-            <source src="..." type="video/mp4">
-        </video>
-        
-        <div class="aktuell">
-          <p><span>NEWS: </span><span class="date">15.6.2018</span><br>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor. </p>  
+        <div class="buttoncontainer">
+            <button id="buttonLive" class="videobutton">&#8250; LIVE</button>
+            <button id="buttonZeitraffer" class="videobutton">&#8250; Zeitraffer</button>
         </div>
-
+        
+        <div class="video-background">
+            <div id="zeitraffer" class="video-foreground">
+                <yellow-feed token="AHRB0TG6Z"></yellow-feed>
+            </div>
+            <div id="live" class="video-foreground">
+                <yellow-feed token="9NAJ5KW1H"></yellow-feed>
+            </div>
+        </div>
+        
         <div id="optoutbanner99">
             <p>Wir verwenden Cookies für ein besseres Online-Erlebnis. </p>
             <a id="acceptga" onclick="accept()">akzeptieren</a>
         </div>
         
+        <script src="https://feed.yellow.webcam/js/yellow-feedplugin.js"></script>
         <script src="scripts/vendor/modernizr-3.6.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="scripts/vendor/jquery-3.3.1.min.js"><\/script>')</script>
