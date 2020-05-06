@@ -51,12 +51,12 @@ $(document).ready(function () {
     //Live
     $('#buttonZeitraffer').click(function() {
         $('#live').hide();
-        $('#zeitraffer').show();
+        $('#zeitraffer').css({"display": "block"});
         $('#buttonLive').css({"background-color": "#f5f5f5", "color": "#323232"});
         $('#buttonZeitraffer').css({"background-color": "#ff0000", "color": "#fff"}); 
     });
     $('#buttonLive').click(function() {
-        $('#live').show();
+        $('#live').css({"display": "block"});
         $('#zeitraffer').hide();
         $('#buttonZeitraffer').css({"background-color": "#f5f5f5", "color": "#323232"});
         $('#buttonLive').css({"background-color": "#ff0000", "color": "#fff"}); 
