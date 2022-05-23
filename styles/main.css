@@ -20,7 +20,7 @@ h1 {
     line-height: 1.2;
 	letter-spacing: 4px;
 	text-align: center;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 h2 {
@@ -61,7 +61,7 @@ figcaption {
 
 }
 
-/*---------------------------------- 
+/*----------------------------------
 hauptnav-is-clean
 -----------------------------------*/
 #navcontainer {
@@ -89,7 +89,7 @@ hauptnav-is-clean
 }
 
 .nav-left img{
-    float: left;   
+    float: left;
 }
 
 .solarius-logo {
@@ -123,7 +123,7 @@ hauptnav-is-clean
     line-height: 1px;
     color: red;
     animation: pulsate 2.5s ease-out;
-    animation-iteration-count: infinite; 
+    animation-iteration-count: infinite;
     opacity: 0.25;
     position: relative;
     bottom: 1px;
@@ -141,7 +141,7 @@ hauptnav-is-clean
     100% {opacity: 0.25;}
 }
 
-/*---------------------------------- 
+/*----------------------------------
 responsive-nav-is-clean
 -----------------------------------*/
 
@@ -151,7 +151,7 @@ responsive-nav-is-clean
 }
 
 .topnav .close:hover {
-    color: rgba(255, 0, 0, 0.8); 
+    color: rgba(255, 0, 0, 0.8);
 }
 
 .topnav .menu {
@@ -163,7 +163,7 @@ responsive-nav-is-clean
     .topnav .navresp {display: none; padding: 16px 0px;}
     .topnav .menu {
         display: block;
-        padding: 12px 0px 0px 0px; 
+        padding: 12px 0px 0px 0px;
     }
 }
 @media screen and (min-width: 931px) {
@@ -173,7 +173,7 @@ responsive-nav-is-clean
     .close {display: none !important;}
 }
 
-/*---------------------------------- 
+/*----------------------------------
 fullscreen-img-transition-fix
 -----------------------------------*/
 
@@ -189,7 +189,7 @@ fullscreen-img-transition-fix
     min-height: 100vh;
     background-repeat: no-repeat;
     background-position: top;
-    background-size: cover;  
+    background-size: cover;
 }
 
 .header-img-kontakt {
@@ -199,7 +199,7 @@ fullscreen-img-transition-fix
     min-height: 60vh;
     background-repeat: no-repeat;
     background-position: top;
-    background-size: cover; 
+    background-size: cover;
 }
 
 .header-img-start {background-image: url("../img/solarius-rosenberg-st-gallen-greifenstrasse-miete-mietwohnung-eigentumswohnung-aussenansicht.jpg");}
@@ -207,7 +207,7 @@ fullscreen-img-transition-fix
 .header-img-miete {background-image: url("../img/solarius-rosenberg-miete-kueche.jpg");}
 .header-img-lage {background-image: url("../img/solarius-rosenberg-greifenstrasse-lage-stgallen-saentis.jpg");}
 .header-img-kontakt {background-image: url("../img/solarius-rosenberg-eigentum-wohnzimmer-kueche.jpg");}
-/*---------------------------------- 
+/*----------------------------------
 section-stage-is-clean
 -----------------------------------*/
 
@@ -227,7 +227,7 @@ section-stage-is-clean
     text-shadow: 0px 0px 10px rgba(40, 40, 40, 0.5);
 }
 
-/*---------------------------------- 
+/*----------------------------------
 Live Video
 -----------------------------------*/
 .buttoncontainer {
@@ -241,23 +241,24 @@ Live Video
 .video-background {
     background: #000;
     position: fixed;
-    top: 100px; 
-    right: 0; 
-    bottom: 0; 
+    top: 100px;
+    right: 0;
+    bottom: 0;
     left: 0;
 }
-/*
-.video-foreground{
+
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 67%;
+}
+.resp-iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100% ;
-    height: 100% ;
-    border: none;
-}*/
-
-.branding-container{
-    display: none;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 #zeitraffer {
@@ -281,8 +282,8 @@ Live Video
 }
 
 #buttonLive {
-    top: 200px; 
-    background: #ff0000; 
+    top: 200px;
+    background: #ff0000;
     color: #ffffff;
     float: left;
 }
@@ -293,7 +294,7 @@ Live Video
     position: fixed;
     right: 0;
     bottom: 0;
-    min-width: 100%; 
+    min-width: 100%;
     min-height: 100%;
 }
 
@@ -354,7 +355,7 @@ Live Video
    color: rgba(0, 0, 0, 0.5);
 }
 
-/*---------------------------------- 
+/*----------------------------------
 article-main-is-clean
 -----------------------------------*/
 
@@ -380,8 +381,8 @@ article-main-is-clean
     text-align: center;
 }
 
-.article-img-container, 
-.article-img-container-fix { 
+.article-img-container,
+.article-img-container-fix {
     position: relative;
     width: 100%;
     height: auto;
@@ -389,11 +390,11 @@ article-main-is-clean
     transition: transform 1s;
 }
 /*
-.article-img-container:hover { 
+.article-img-container:hover {
     transform: scale(1.02);
 }*/
 
-/*---------------------------------- 
+/*----------------------------------
 Dropdown-Bottom-is-clean
 -----------------------------------*/
 
@@ -420,7 +421,7 @@ Dropdown-Bottom-is-clean
     line-height: 0px;
     border: none;
     border-radius: 50%;
-    z-index: 4; 
+    z-index: 4;
 }
 
 .minus {
@@ -450,7 +451,7 @@ Dropdown-Bottom-is-clean
 th, td {
     border-bottom: 1px solid rgb(200,200,200);
     padding: 8px 6px;
-    text-align: left;  
+    text-align: left;
 }
 
 td:first-child {
@@ -462,7 +463,7 @@ td:first-child {
 .dropdown:hover .plus {display: none;}
 .dropdown:hover .dropbtn {background-color: whitesmoke;}
 
-/*---------------------------------- 
+/*----------------------------------
 article-second-is-clean
 -----------------------------------*/
 .section-second-container {
@@ -523,7 +524,7 @@ footer-grundriss-is-clean
     color: red;
 }
 
-/*---------------------------------- 
+/*----------------------------------
 footer-is-clean
 -----------------------------------*/
 
@@ -567,7 +568,7 @@ footer-is-clean
     cursor: pointer;
 }
 
-/*---------------------------------- 
+/*----------------------------------
 impressum
 -----------------------------------*/
 
@@ -607,7 +608,7 @@ impressum
     text-align: left;
 }
 
-/*---------------------------------- 
+/*----------------------------------
 a-is-clean
 -----------------------------------*/
 
@@ -623,7 +624,7 @@ a:visited {
 
 a:hover {
     color: red;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 a:active {
@@ -636,7 +637,7 @@ a:active {
     padding-bottom: 5px;
 }
 
-/*---------------------------------- 
+/*----------------------------------
 optoutbanner
 -----------------------------------*/
 
@@ -672,7 +673,7 @@ optoutbanner
 }
 
 
-/*---------------------------------- 
+/*----------------------------------
 Responsive
 -----------------------------------*/
 
@@ -698,19 +699,19 @@ Responsive
     .footer-container-kontakt {
         margin-top: 40px;
     }
-    
+
     #impressum article {
     width: 50%;
     }
 }
 
 @media screen and (max-width: 760px) {
-    
+
     #navcontainerlive {padding: 13px 20px;}
     .buttoncontainer {top:0px;width: 50%; right: 0;}
     .videobutton {width: 50%;padding: 25px 15px;}
     .video-background{top: 65px;}
-    
+
     .news {width: 100%;}
     .icon-scroll{display: none;}
     .article-main-container{
@@ -718,7 +719,7 @@ Responsive
         padding: 0;
         margin-top: 100px
     }
- 
+
     .article-main-p{
         padding: 0px 40px;
     }
@@ -745,7 +746,7 @@ Responsive
     .article-50-container p {
         margin-top: 0px;
     }
-    
+
     #optoutbanner99 {
         display: none;
     }
@@ -755,15 +756,15 @@ Responsive
    h1 {
     font-size: 38px;
 	letter-spacing: 3px;
-    padding: 0px 40px; 
+    padding: 0px 40px;
     }
-    
+
     h2 {font-size: 28px;}
     p {font-size: 17px;}
-    
+
     .buttoncontainer {bottom: 0;top: auto;width: 100%;}
     .video-background{top: 55px;}
-    
+
     #navcontainer {padding: 18px 5% !important;}
     .nav-left img {width: 30px; height: 30px;}
     .topnav .menu {padding-top: 9px;}
@@ -781,5 +782,3 @@ Responsive
     .f-g-nav-container .l, .f-g-nav-container .r {padding: 0px;}
     .header-img-kontakt {display: none;}
 }
-
-    
