@@ -64,15 +64,13 @@ $(document).ready(function () {
     });
     
     //Impressum
-    
 
-    $('.togglelink').click(function() {
-        var totoggle = $(this).attr("data-toggle");
-        $(totoggle).toggle();
-        
-        if ($(totoggle).is(":visible")) {
-            $('html,body').animate({scrollTop:$(totoggle).offset().top}, 1000,'easeInOutExpo');
-        } 
-        
-    });
+    $('.targetlink').click(function() {
+        var $target = $($(this).data("target"));
+        $target.slideToggle(600, function() {
+            if ($target.is(":visible")) {
+                $('html,body').animate({scrollTop: $target.offset().top}, 600);
+            }
+        });
+      });
 });

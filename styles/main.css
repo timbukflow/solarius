@@ -564,7 +564,7 @@ footer-is-clean
     padding: 0 5%;
 }
 
-.togglelink {
+.targetlink {
     cursor: pointer;
 }
 
@@ -637,41 +637,65 @@ a:active {
     padding-bottom: 5px;
 }
 
+
 /*----------------------------------
-optoutbanner
+    Cookiebanner
 -----------------------------------*/
 
-#optoutbanner99 {
-	font-size: 12px;
-	line-height: 18px;
+#cookiebanner {
     position: fixed;
-    bottom: 0;
-    left: 0;
-	background-color: #fff;
-	text-align: right;
-	z-index: 200;
-}
-
-#optoutbanner99 p {
-    padding: 15px 15px;
-    font-size: 15px;
-    display: inline-block;
-    margin: 0px;
+    bottom: -300px;
+    left: 40px;
+    width: 350px;
+    background-color: white;
+    padding: 15px;
+    z-index: 9999;
+    transition: bottom 0.5s cubic-bezier(0.2, 0.8, 0.3, 2);
+  }
+  
+  #cookiebanner p {
     text-align: left;
-}
-
-#optoutbanner99 a {
-	cursor: pointer;
-    font-size: 15px;
-    display: inline-block;
-    margin: 0px;
-	text-decoration: none !important;
-	background-color: #000;
-	color: #fff !important;
-	font-weight: normal !important;
-    padding: 18px 18px;
-}
-
+    font-size: 18px;
+    color: black;
+    margin: 0;
+  }
+  
+  #cookiebanner.visible {
+    bottom: 25px;
+  }
+  
+  #cookiebanner button {
+    font-size: 18px;
+    letter-spacing: 0;
+    text-decoration: none; 
+    cursor: pointer;
+  }
+  
+  #declineBtn, #acceptBtn {
+    margin-top: 20px;
+  }
+  
+  #declineBtn {
+    padding: 10px 20px;
+    background:none;
+    border: 1px solid gray; 
+    color: gray;
+    opacity: 0.5;
+  }
+  
+  #acceptBtn {
+    border: none;
+    padding: 10px 40px;
+    background: black;
+    color: white;
+    margin-right: 5px;
+  }
+  
+  #acceptBtn:hover,
+  #declineBtn:hover {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0.75; ;
+  }
 
 /*----------------------------------
 Responsive
@@ -746,10 +770,6 @@ Responsive
     .article-50-container p {
         margin-top: 0px;
     }
-
-    #optoutbanner99 {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -781,4 +801,7 @@ Responsive
     .f-g-nav-container {padding: 0px 5%}
     .f-g-nav-container .l, .f-g-nav-container .r {padding: 0px;}
     .header-img-kontakt {display: none;}
+
+    #cookiebanner {width: calc(100% - 40px); left: 20px;}
+    #cookiebanner.visible {bottom: 60px;}
 }
