@@ -212,55 +212,48 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-G44BQR5WBN"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
+            function gtag() {
+                dataLayer.push(arguments);
+            }
             gtag('js', new Date());
 
-            const trackingID = 'G-G44BQR5WBN';
-            const disableString = 'ga-disable-' + trackingID;
-            const cookiebanner = document.getElementById('cookiebanner');
-            const acceptBtn = document.getElementById('acceptBtn');
-            const declineBtn = document.getElementById('declineBtn');
-
-            function setCookie(name, value, exdays) {
-            const d = new Date();
-            d.setTime(d.getTime() + (exdays*24*60*60*1000));
-            const expires = "expires="+ d.toUTCString();
-            document.cookie = name + "=" + value + ";" + expires + ";path=/;SameSite=None;Secure";
-            }
-
-            function getCookie(cname) {
-            const name = cname + "=";
-            const decodedCookie = decodeURIComponent(document.cookie);
-            const ca = decodedCookie.split(';');
-            for(let i = 0; i < ca.length; i++) {
-                let c = ca[i];
-                while (c.charAt(0) == ' ') { c = c.substring(1); }
-                if (c.indexOf(name) == 0) { return c.substring(name.length, c.length); }
-            }
-            return "";
-            }
+            var trackingID = 'G-G44BQR5WBN';
+            var disableString = 'ga-disable-' + trackingID;
 
             function accept() {
-            setCookie('accepted', 'yes, I accept google analytics', 1000);
-            cookiebanner.remove();
-            gtag('config', trackingID, { 'anonymize_ip': true, 'allow_google_signals': false, 'allow_ad_personalization_signals': false });
+                var expirationDate = new Date();
+                expirationDate.setDate(expirationDate.getDate() + 365);
+                document.cookie = 'accepted=yes, i accept google analytics; expires=' + expirationDate.toUTCString() + '; path=/; SameSite=None; Secure';
+                document.getElementById('cookiebanner').remove();
+                gtag('config', trackingID, {
+                    'anonymize_ip': true,
+                    'allow_google_signals': false,
+                    'allow_ad_personalization_signals': false
+                });
             }
 
             function decline() {
-            setCookie(disableString, 'true', 1000);
-            cookiebanner.remove();
+                var expirationDate = new Date();
+                expirationDate.setDate(expirationDate.getDate() + 365);
+                document.cookie = disableString + '=true; expires=' + expirationDate.toUTCString() + '; path=/; SameSite=None; Secure';
+                document.getElementById('cookiebanner').remove();
             }
 
-            acceptBtn.addEventListener('click', accept);
-            declineBtn.addEventListener('click', decline);
+            function showBanner() {
+                var banner = document.getElementById('cookiebanner');
+                banner.classList.add('visible');
+            }
 
-            if (getCookie(disableString) === 'true') {
-            window[disableString] = true;
-            cookiebanner.remove();
-            } else if (getCookie('accepted') === 'yes, I accept google analytics') {
-            accept();
+            document.getElementById('acceptBtn').addEventListener('click', accept);
+            document.getElementById('declineBtn').addEventListener('click', decline);
+
+            if (document.cookie.indexOf(disableString + '=true') > -1) {
+                window[disableString] = true;
+                document.getElementById('cookiebanner').remove();
+            } else if (document.cookie.indexOf('accepted=') >= 0) {
+                accept();
             } else {
-            setTimeout(() => { cookiebanner.classList.add('visible'); }, 3500);
+                setTimeout(showBanner, 3500);
             }
         </script>
     </body>
