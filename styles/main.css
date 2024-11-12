@@ -299,16 +299,18 @@ Live Video
 }
 
 .aktuell {
-    position: relative;
     padding: 0 5%;
     margin-top: 125px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 
 .news {
     background: whitesmoke;
-    width: 48%;
-    margin: 1%;
+    width: 32%;
     padding: 20px;
     text-align: left;
     float: left;
@@ -715,6 +717,8 @@ Responsive
 }
 
 @media screen and (max-width: 1190px) {
+    .news {width: 48%;}
+    
     .footer-25 {
         width: 50%;
         margin-bottom: 20px;
